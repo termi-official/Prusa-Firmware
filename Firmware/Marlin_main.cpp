@@ -2104,7 +2104,7 @@ void process_commands()
 
     } else if(code_seen("Rev")){
 
-      SERIAL_PROTOCOLLN(FILAMENT_SIZE "-" ELECTRONICS "-" NOZZLE_TYPE );
+      SERIAL_PROTOCOLLN("Syringe -" ELECTRONICS "-" NOZZLE_TYPE );
 
     } else if(code_seen("Lang")) {
       lcd_force_language_selection();
